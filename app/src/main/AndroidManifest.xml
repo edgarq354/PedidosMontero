@@ -19,27 +19,27 @@
         <activity
             android:name=".Informacion"
             android:label="@string/title_activity_informacion"
-            android:theme="@style/Theme.PedidosMontero.NoActionBar" />
+            android:theme="@style/Theme.PedidosMontero" />
         <activity
             android:name=".Peril_usuario"
             android:label="@string/title_activity_peril_usuario"
-            android:theme="@style/Theme.PedidosMontero.NoActionBar" />
+            android:theme="@style/Theme.PedidosMontero" />
         <activity
             android:name=".Perfil_conductor"
             android:label="@string/title_activity_perfil_conductor"
-            android:theme="@style/Theme.PedidosMontero.NoActionBar" />
+            android:theme="@style/Theme.PedidosMontero" />
         <activity
             android:name=".Iniciar_sesion"
             android:label="@string/title_activity_iniciar_sesion"
-            android:theme="@style/Theme.PedidosMontero.NoActionBar" />
+            android:theme="@style/Theme.PedidosMontero" />
         <activity
             android:name=".Registro"
             android:label="@string/title_activity_registro"
-            android:theme="@style/Theme.PedidosMontero.NoActionBar" />
+            android:theme="@style/Theme.PedidosMontero" />
         <activity
             android:name=".Principal"
             android:label="@string/title_activity_principal"
-            android:theme="@style/Theme.PedidosMontero.NoActionBar">
+            android:theme="@style/Theme.PedidosMontero">
 
         </activity>
         <activity android:name=".MainActivity" />

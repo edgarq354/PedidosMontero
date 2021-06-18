@@ -2,42 +2,89 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:orientation="vertical"
     android:layout_height="match_parent"
+    android:background="#FFC107"
+    android:orientation="vertical"
     app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView" />
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-black"
+        android:text="FORMULARIO REGISTRO DE USUARIO"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        />
 
     <EditText
         android:id="@+id/editTextTextPersonName3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/stile_border_editex"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="TextView" />
+        android:hint="Nombres"
+        android:inputType="textPersonName" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName4"
+        android:id="@+id/et_paterno"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/stile_border_editex"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name" />
+        android:hint="Apellido Paterno"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/etmaterno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/stile_border_editex"
+        android:ems="10"
+        android:hint="Apellido Materno"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/etcelular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/stile_border_editex"
+        android:ems="10"
+        android:hint="Numero de Celular"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/etcorreo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/stile_border_editex"
+        android:ems="10"
+        android:hint="Correo electronico"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/ettoken"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/stile_border_editex"
+        android:ems="10"
+        android:hint="Token"
+        android:inputType="textPersonName" />
 
     <Button
         android:id="@+id/bt_registrar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Registrarse" />
+        android:layout_margin="20dp"
+        android:text="GRABAR"
+        app:backgroundTint="#FD0202" />
 </LinearLayout>

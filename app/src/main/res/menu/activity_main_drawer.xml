@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:showIn="navigation_view">
+    tools:showIn="navigation_view"
+    tools:ignore="ExtraText"
+    >
 
     <group android:checkableBehavior="single">
         <item
@@ -17,8 +19,14 @@
             android:icon="@drawable/ic_menu_gallery"
             android:title="Informacion" />
         <item
+            android:id="@+id/nav_iniciar_sesion"
+            android:icon="@drawable/ic_menu_send"
+            android:title="Iniciar Sesión" />
+        <item
             android:id="@+id/nav_slideshow"
             android:icon="@drawable/ic_menu_slideshow"
             android:title="Salir" />
+
     </group>
+
 </menu>

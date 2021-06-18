@@ -45,6 +45,9 @@ public class Principal extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
+        navigationView.setBackgroundColor(getResources().getColor(R.color.amarillo2));
+
+
     }
 
     @Override
@@ -52,6 +55,7 @@ public class Principal extends AppCompatActivity {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.principal, menu);
         return true;
+
     }
 
     @Override
@@ -59,5 +63,7 @@ public class Principal extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
         return NavigationUI.navigateUp(navController, mAppBarConfiguration)
                 || super.onSupportNavigateUp();
+
+
     }
 }

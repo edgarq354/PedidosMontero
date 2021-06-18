@@ -1,6 +1,120 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    app:layout_behavior="@string/appbar_scrolling_view_behavior"></androidx.constraintlayout.widget.ConstraintLayout>
+    android:background="#FFC107"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:fontFamily="sans-serif-black"
+        android:text="FORMULARIO REGISTRO DE CONDUCTOR"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/stile_border_editex"
+        android:ems="10"
+        android:hint="Nombres"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/et_paterno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/stile_border_editex"
+        android:ems="10"
+        android:hint="Apellido Paterno"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/etmaterno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/stile_border_editex"
+        android:ems="10"
+        android:hint="Apellido Materno"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/etcelular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/stile_border_editex"
+        android:ems="10"
+        android:hint="Numero de Celular"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/etcorreoconductor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/stile_border_editex"
+        android:ems="10"
+        android:hint="Correo electronico"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/etcorreo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/stile_border_editex"
+        android:ems="10"
+        android:hint="Numero de Licencia"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/ettoken"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/stile_border_editex"
+        android:ems="10"
+        android:hint="Token"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/etuser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/stile_border_editex"
+        android:ems="10"
+        android:hint="User"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/etpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/stile_border_editex"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/bt_registrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="GRABAR"
+        app:backgroundTint="#FD0202" />
+</LinearLayout>
