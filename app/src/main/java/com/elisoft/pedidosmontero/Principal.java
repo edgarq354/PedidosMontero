@@ -1,8 +1,10 @@
 package com.elisoft.pedidosmontero;
 
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Menu;
+import android.widget.TextView;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
@@ -46,6 +48,11 @@ public class Principal extends AppCompatActivity {
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
         navigationView.setBackgroundColor(getResources().getColor(R.color.amarillo2));
+
+
+        SharedPreferences perfil=getSharedPreferences("perfil",MODE_PRIVATE);
+        TextView et_nombre=findViewById(R.id.et_nombre);
+        et_nombre.setText(perfil.getString("nombre",""));
 
 
     }
