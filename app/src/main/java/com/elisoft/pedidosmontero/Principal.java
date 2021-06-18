@@ -50,9 +50,9 @@ public class Principal extends AppCompatActivity {
         navigationView.setBackgroundColor(getResources().getColor(R.color.amarillo2));
 
 
-        SharedPreferences perfil=getSharedPreferences("perfil",MODE_PRIVATE);
-        TextView et_nombre=findViewById(R.id.et_nombre);
-        et_nombre.setText(perfil.getString("nombre",""));
+       // SharedPreferences perfil=getSharedPreferences("perfil",MODE_PRIVATE);
+       // TextView et_nombre=findViewById(R.id.et_nombre);
+       // et_nombre.setText(perfil.getString("nombre",""));
 
 
     }
