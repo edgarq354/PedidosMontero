@@ -27,7 +27,6 @@
         android:paddingTop="@dimen/nav_header_vertical_spacing"
         android:text="Nombre de usuario"
         android:gravity="center"
-        android:id="@+id/et_nombre"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
     <TextView
