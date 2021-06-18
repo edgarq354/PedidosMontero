@@ -127,7 +127,7 @@ public class Registro extends AppCompatActivity {
                                     guardar_datos(id,nombre,paterno,materno,celular,email,token);
 
                                     startActivity(new Intent(Registro.this,Principal.class));
-
+//siempre q pase algo con tu proyecto vas a darle click en SYNC PROJECT
                                 }
                                 else
                                 {
