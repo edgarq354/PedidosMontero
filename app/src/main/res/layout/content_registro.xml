@@ -21,7 +21,7 @@
         />
 
     <EditText
-        android:id="@+id/editTextTextPersonName3"
+        android:id="@+id/et_nombre"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
@@ -41,7 +41,7 @@
         android:inputType="textPersonName" />
 
     <EditText
-        android:id="@+id/etmaterno"
+        android:id="@+id/et_materno"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
@@ -51,7 +51,7 @@
         android:inputType="textPersonName" />
 
     <EditText
-        android:id="@+id/etcelular"
+        android:id="@+id/et_celular"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
@@ -61,7 +61,7 @@
         android:inputType="textPersonName" />
 
     <EditText
-        android:id="@+id/etcorreo"
+        android:id="@+id/et_correo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
@@ -71,7 +71,7 @@
         android:inputType="textPersonName" />
 
     <EditText
-        android:id="@+id/ettoken"
+        android:id="@+id/et_token"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"

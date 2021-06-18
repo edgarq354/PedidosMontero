@@ -11,9 +11,16 @@ import androidx.appcompat.widget.Toolbar;
 
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 
 public class Registro extends AppCompatActivity {
-
+    EditText et_nombre;
+    EditText et_paterno;
+    EditText et_materno;
+    EditText et_celular;
+    EditText et_correo;
+    EditText et_token;
+    Button bt_registrar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,18 +28,15 @@ public class Registro extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
+        et_nombre=findViewById(R.id.et_nombre);
+        et_paterno=findViewById(R.id.et_paterno);
+        et_materno=findViewById(R.id.et_materno);
+        et_celular=findViewById(R.id.et_celular);
+        et_correo=findViewById(R.id.et_correo);
+        et_token=findViewById(R.id.et_token);
+        bt_registrar=findViewById(R.id.bt_registrar);
 
 
-
-        Button bt_registrar=findViewById(R.id.bt_registrar);
 
 
         bt_registrar.setOnClickListener(new View.OnClickListener() {
