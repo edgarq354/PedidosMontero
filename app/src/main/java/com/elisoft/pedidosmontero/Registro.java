@@ -23,6 +23,8 @@ import androidx.appcompat.widget.Toolbar;
 
 import android.util.Log;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
 
@@ -51,6 +53,7 @@ public class Registro extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_registro);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -127,7 +130,7 @@ public class Registro extends AppCompatActivity {
                                     guardar_datos(id,nombre,paterno,materno,celular,email,token);
 
                                     startActivity(new Intent(Registro.this,Principal.class));
-//siempre q pase algo con tu proyecto vas a darle click en SYNC PROJECT
+
                                 }
                                 else
                                 {

@@ -11,15 +11,19 @@
         android:label="@string/menu_home"
         tools:layout="@layout/fragment_home" />
 
-    <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.elisoft.pedidosmontero.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
-
-    <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.elisoft.pedidosmontero.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+    <activity
+        android:id="@+id/perfil_conductor"
+        android:name="com.elisoft.pedidosmontero.Perfil_conductor"
+        android:label="activity_perfil_conductor"
+        tools:layout="@layout/activity_perfil_conductor" />
+    <activity
+        android:id="@+id/iniciar_sesion"
+        android:name="com.elisoft.pedidosmontero.Iniciar_sesion"
+        android:label="activity_iniciar_sesion"
+        tools:layout="@layout/activity_iniciar_sesion" />
+    <activity
+        android:id="@+id/registro"
+        android:name="com.elisoft.pedidosmontero.Registro"
+        android:label="activity_registro"
+        tools:layout="@layout/activity_registro" />
 </navigation>

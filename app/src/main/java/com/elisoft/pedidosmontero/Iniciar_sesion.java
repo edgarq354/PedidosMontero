@@ -11,6 +11,7 @@ import androidx.appcompat.widget.Toolbar;
 
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 public class Iniciar_sesion extends AppCompatActivity {
 
@@ -30,7 +31,7 @@ public class Iniciar_sesion extends AppCompatActivity {
             }
         });
         Button bt_iniciar_sesion=findViewById(R.id.bt_iniciar_sesion);
-        Button bt_registro=findViewById(R.id.bt_registro);
+        TextView txview =findViewById(R.id.tv_registro);
 
         bt_iniciar_sesion.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -40,7 +41,7 @@ public class Iniciar_sesion extends AppCompatActivity {
         });
 
 
-        bt_registro.setOnClickListener(new View.OnClickListener() {
+        txview.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                  startActivity(new Intent(Iniciar_sesion.this,Registro.class));

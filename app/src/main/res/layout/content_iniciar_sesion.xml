@@ -1,43 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFC107"
     app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="40dp"
         android:layout_gravity="center"
-        android:orientation="vertical">
+        android:background="@drawable/splash2"
 
+        >
+    </ImageView>
 
-        <EditText
-            android:id="@+id/editTextTextPersonName"
+    <EditText
+            android:id="@+id/editTextuser"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="textPersonName"
-            android:text="Name" />
+            android:drawableLeft="@drawable/login5"
+            android:layout_margin="15dp"
+            android:background="@drawable/stile_border_editex"
+            android:hint=" Usuario" />
 
-        <EditText
-            android:id="@+id/editTextTextPersonName2"
+    <EditText
+            android:id="@+id/editTextpassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Name" />
+            android:drawableLeft="@drawable/contrasena5"
+            android:hint=" Contraseña"
+            android:background="@drawable/stile_border_editex"
+            android:layout_margin="15dp"
+            android:inputType="textPassword" />
 
-        <Button
-            android:id="@+id/bt_iniciar_sesion"
+    <Button
+        android:id="@+id/bt_iniciar_sesion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/borde_boton"
+        android:text="Iniciar sesion"
+        app:backgroundTint="#FF0404" />
+
+    <TextView
+            android:id="@+id/tv_registro"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Iniciar sesion" />
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:text="Registrarse"
+            />
 
-        <Button
-            android:id="@+id/bt_registro"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Registrarse como cliente" />
-    </LinearLayout>
-</FrameLayout>
+</LinearLayout>
