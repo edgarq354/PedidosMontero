@@ -1,7 +1,8 @@
-package com.elisoft.pedidosmontero;
+package com.elisoft.pedidosmontero.conductor;
 
 import android.os.Bundle;
 
+import com.elisoft.pedidosmontero.R;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 

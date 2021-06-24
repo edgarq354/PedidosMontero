@@ -13,17 +13,17 @@
 
     <activity
         android:id="@+id/perfil_conductor"
-        android:name="com.elisoft.pedidosmontero.Perfil_conductor"
+        android:name="com.elisoft.pedidosmontero.conductor.Perfil_conductor"
         android:label="activity_perfil_conductor"
         tools:layout="@layout/activity_perfil_conductor" />
     <activity
         android:id="@+id/iniciar_sesion"
-        android:name="com.elisoft.pedidosmontero.Iniciar_sesion"
+        android:name="com.elisoft.pedidosmontero.conductor.Iniciar_sesion"
         android:label="activity_iniciar_sesion"
         tools:layout="@layout/activity_iniciar_sesion" />
     <activity
         android:id="@+id/registro"
-        android:name="com.elisoft.pedidosmontero.Registro"
+        android:name="com.elisoft.pedidosmontero.cliente.Registro"
         android:label="activity_registro"
         tools:layout="@layout/activity_registro" />
 </navigation>

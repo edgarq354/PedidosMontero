@@ -1,4 +1,4 @@
-package com.elisoft.pedidosmontero;
+package com.elisoft.pedidosmontero.cliente;
 
 import android.app.ProgressDialog;
 import android.content.DialogInterface;
@@ -14,8 +14,8 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.snackbar.Snackbar;
+import com.elisoft.pedidosmontero.R;
+import com.elisoft.pedidosmontero.Suceso;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
@@ -23,12 +23,9 @@ import androidx.appcompat.widget.Toolbar;
 
 import android.util.Log;
 import android.view.View;
-import android.view.Window;
-import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
 
-import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -129,7 +126,7 @@ public class Registro extends AppCompatActivity {
 
                                     guardar_datos(id,nombre,paterno,materno,celular,email,token);
 
-                                    startActivity(new Intent(Registro.this,Principal.class));
+                                    startActivity(new Intent(Registro.this, Principal.class));
 
                                 }
                                 else

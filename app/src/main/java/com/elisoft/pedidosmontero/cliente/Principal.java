@@ -1,4 +1,4 @@
-package com.elisoft.pedidosmontero;
+package com.elisoft.pedidosmontero.cliente;
 
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.Menu;
 import android.widget.TextView;
 
+import com.elisoft.pedidosmontero.R;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
