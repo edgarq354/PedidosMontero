@@ -24,5 +24,5 @@
     <string name="title_activity_perfil_conductor">Perfil_conductor</string>
     <string name="title_activity_peril_usuario">Peril_usuario</string>
     <string name="title_activity_informacion">Informacion</string>
-    <string name="servidor">http://192.168.0.105/pedidos/</string>
+    <string name="servidor">http://64.227.10.80/pedidos/</string>
 </resources>
