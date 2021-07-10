@@ -1,9 +1,12 @@
 package com.elisoft.pedidosmontero.cliente;
 
 import android.content.SharedPreferences;
+import android.graphics.drawable.shapes.Shape;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Menu;
+import android.widget.ListView;
+import android.widget.SearchView;
 import android.widget.TextView;
 
 import com.elisoft.pedidosmontero.R;
@@ -19,14 +22,21 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
+import java.util.ArrayList;
+
 public class Principal extends AppCompatActivity {
 
     private AppBarConfiguration mAppBarConfiguration;
+    // private ListView listView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_principal);
+
+        //clase inicializar busqueda
+        //initSearhWidgets();
+
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         FloatingActionButton fab = findViewById(R.id.fab);
@@ -57,6 +67,36 @@ public class Principal extends AppCompatActivity {
 
 
     }
+    // Metodo para busqueda de datos
+/*
+    private void initSearhWidgets(){
+        SearchView searchView = SearchView findViewById(R.id.lista_busqueda);
+        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+
+            public boolean onQueryTextSubmit(String s) {
+                return false;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String s) {
+
+                ArrayList<Shape> filteredShapes = new ArrayList<Shape>();
+
+                for (Shape shape: mInflater){
+                    if (shape.mInfra().toLowerCase().contains(s.toLowerCase())){
+                        filteredShapes.add(shape);
+                    }
+                }
+                ProductoAdapter adapter = new ProductoAdapter(getApplicationContext(),0,filteredShapes);
+                listView.setAdapter(adapter);
+
+                return false;
+            }
+        });
+    }  */
+
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
