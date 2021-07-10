@@ -41,9 +41,7 @@ public class Registro extends AppCompatActivity {
     EditText et_token;
     Button bt_registrar;
 
-
     ProgressDialog pDialog;
-
     RequestQueue queue;
     Suceso suceso;
 
@@ -62,9 +60,6 @@ public class Registro extends AppCompatActivity {
         et_correo=findViewById(R.id.et_correo);
         et_token=findViewById(R.id.et_token);
         bt_registrar=findViewById(R.id.bt_registrar);
-
-
-
 
         bt_registrar.setOnClickListener(new View.OnClickListener() {
             @Override

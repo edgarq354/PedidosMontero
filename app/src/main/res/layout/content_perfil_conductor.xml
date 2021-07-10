@@ -21,7 +21,7 @@
         />
 
     <EditText
-        android:id="@+id/editTextTextPersonName3"
+        android:id="@+id/et_nombre_conductor"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
@@ -31,7 +31,7 @@
         android:inputType="textPersonName" />
 
     <EditText
-        android:id="@+id/et_paterno"
+        android:id="@+id/et_paterno_conductor"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
@@ -41,7 +41,7 @@
         android:inputType="textPersonName" />
 
     <EditText
-        android:id="@+id/etmaterno"
+        android:id="@+id/et_materno_conductor"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
@@ -51,7 +51,7 @@
         android:inputType="textPersonName" />
 
     <EditText
-        android:id="@+id/etcelular"
+        android:id="@+id/et_celular_conductor"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
@@ -61,7 +61,7 @@
         android:inputType="textPersonName" />
 
     <EditText
-        android:id="@+id/etcorreoconductor"
+        android:id="@+id/et_correo_conductor"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
@@ -71,7 +71,7 @@
         android:inputType="textPersonName" />
 
     <EditText
-        android:id="@+id/etcorreo"
+        android:id="@+id/et_licencia_conductor"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
@@ -81,7 +81,7 @@
         android:inputType="textPersonName" />
 
     <EditText
-        android:id="@+id/ettoken"
+        android:id="@+id/et_token_conductor"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
@@ -91,7 +91,7 @@
         android:inputType="textPersonName" />
 
     <EditText
-        android:id="@+id/etuser"
+        android:id="@+id/et_user_conductor"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
@@ -101,7 +101,7 @@
         android:inputType="textPersonName" />
 
     <EditText
-        android:id="@+id/etpassword"
+        android:id="@+id/et_pass_conductor"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
@@ -111,7 +111,7 @@
         android:inputType="textPersonName" />
 
     <Button
-        android:id="@+id/bt_registrar"
+        android:id="@+id/bt_registrar_conductor"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"

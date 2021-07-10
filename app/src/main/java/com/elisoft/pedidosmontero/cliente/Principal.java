@@ -83,7 +83,7 @@ public class Principal extends AppCompatActivity {
 
                 ArrayList<Shape> filteredShapes = new ArrayList<Shape>();
 
-                for (Shape shape: mInflater){
+                for (Shape shape: mInflaterListItems){
                     if (shape.mInfra().toLowerCase().contains(s.toLowerCase())){
                         filteredShapes.add(shape);
                     }
