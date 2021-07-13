@@ -14,23 +14,26 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
-import com.elisoft.pedidosmontero.R;
 import com.elisoft.pedidosmontero.Suceso;
 import com.elisoft.pedidosmontero.cliente.Principal;
-import com.elisoft.pedidosmontero.cliente.Registro;
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
 
 import android.util.Log;
 import android.view.View;
-import android.view.Window;
-import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
+
+import androidx.appcompat.widget.Toolbar;
+import androidx.navigation.NavController;
+import androidx.navigation.Navigation;
+import androidx.navigation.ui.AppBarConfiguration;
+import androidx.navigation.ui.NavigationUI;
+
+
+import com.elisoft.pedidosmontero.R;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -38,7 +41,7 @@ import org.json.JSONObject;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Perfil_conductor extends AppCompatActivity {
+public class Registro_conductor extends AppCompatActivity {
 
     EditText et_nombre_conductor;
     EditText et_paterno_conductor;
@@ -55,11 +58,11 @@ public class Perfil_conductor extends AppCompatActivity {
     RequestQueue queue;
     Suceso suceso;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_perfil_conductor);
+
 
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -85,11 +88,12 @@ public class Perfil_conductor extends AppCompatActivity {
 
     }
 
+
     // Configuracion voley
 
     public void servicio_registro_volley(){
         try {
-            pDialog = new ProgressDialog( Perfil_conductor.this);
+            pDialog = new ProgressDialog( Registro_conductor.this);
             pDialog.setTitle(getString(R.string.app_name));
             pDialog.setMessage("Registrando");
             pDialog.setIndeterminate(false);
@@ -100,15 +104,15 @@ public class Perfil_conductor extends AppCompatActivity {
 
 
             JSONObject jsonParam= new JSONObject();
-            jsonParam.put("et_nombre_conductor", et_nombre_conductor.getText().toString());
-            jsonParam.put("et_paterno_conductor", et_paterno_conductor.getText().toString());
-            jsonParam.put("et_materno_conductor", et_materno_conductor.getText().toString());
-            jsonParam.put("et_celular_conductor", et_celular_conductor.getText().toString());
-            jsonParam.put("et_correo_conductor", et_correo_conductor.getText().toString());
-            jsonParam.put("et_licencia_conductor", et_licencia_conductor.getText().toString());
-            jsonParam.put("et_token_conductor", et_token_conductor.getText().toString());
-            jsonParam.put("et_user_conductor", et_user_conductor.getText().toString());
-            jsonParam.put("et_pass_conductor", et_pass_conductor.getText().toString());
+            jsonParam.put("nombre", et_nombre_conductor.getText().toString());
+            jsonParam.put("paterno", et_paterno_conductor.getText().toString());
+            jsonParam.put("materno", et_materno_conductor.getText().toString());
+            jsonParam.put("celular", et_celular_conductor.getText().toString());
+            jsonParam.put("correo", et_correo_conductor.getText().toString());
+            jsonParam.put("licencia", et_licencia_conductor.getText().toString());
+            jsonParam.put("token", et_token_conductor.getText().toString());
+            jsonParam.put("user", et_user_conductor.getText().toString());
+            jsonParam.put("pass", et_pass_conductor.getText().toString());
 
             String url=getString(R.string.servidor) + "frmConductor.php?opcion=insertar_conductor";
 
@@ -145,7 +149,7 @@ public class Perfil_conductor extends AppCompatActivity {
 
                                     guardar_datos(id,nombre,paterno,materno,celular,correo,licencia,token,user,pass);
 
-                                    startActivity(new Intent(Perfil_conductor.this, Principal.class));
+                                    startActivity(new Intent(Registro_conductor.this, Principal.class));
 
                                 }
                                 else
@@ -219,6 +223,7 @@ public class Perfil_conductor extends AppCompatActivity {
         builder.create();
         builder.show();
     }
+
 
 
 }

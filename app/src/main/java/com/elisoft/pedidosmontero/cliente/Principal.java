@@ -37,8 +37,6 @@ public class Principal extends AppCompatActivity {
         //clase inicializar busqueda
         //initSearhWidgets();
 
-        Toolbar toolbar = findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
         FloatingActionButton fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override

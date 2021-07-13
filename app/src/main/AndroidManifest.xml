@@ -2,9 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.elisoft.pedidosmontero">
 
-
     <uses-permission android:name="android.permission.INTERNET" />
-
 
     <application
         android:allowBackup="true"
@@ -13,9 +11,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.PedidosMontero"
-        android:usesCleartextTraffic="true"
-        >
-
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".conductor.Registro_conductor"
+            android:label="@string/title_activity_registro_conductor"
+            android:theme="@style/Theme.PedidosMontero.NoActionBar"></activity>
         <activity android:name=".splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,46 +23,31 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".Informacion"
             android:label="@string/title_activity_informacion"
-            android:theme="@style/Theme.PedidosMontero"
-        />
-
+            android:theme="@style/Theme.PedidosMontero" />
         <activity
             android:name=".cliente.Peril_usuario"
             android:label="@string/title_activity_peril_usuario"
-            android:theme="@style/Theme.PedidosMontero"
-        />
-
+            android:theme="@style/Theme.PedidosMontero" />
         <activity
             android:name=".conductor.Perfil_conductor"
             android:label="@string/title_activity_perfil_conductor"
-            android:theme="@style/Theme.PedidosMontero"
-        />
-
+            android:theme="@style/Theme.PedidosMontero" />
         <activity
             android:name=".conductor.Iniciar_sesion"
             android:label="@string/title_activity_iniciar_sesion"
-            android:theme="@style/Theme.PedidosMontero"
-        />
-
+            android:theme="@style/Theme.PedidosMontero" />
         <activity
             android:name=".cliente.Registro"
             android:label="@string/title_activity_registro"
-            android:theme="@style/Theme.PedidosMontero"
-        />
-
+            android:theme="@style/Theme.PedidosMontero" />
         <activity
             android:name=".cliente.Principal"
             android:label="@string/title_activity_principal"
-            android:theme="@style/Theme.PedidosMontero">
-
-        </activity>
-
+            android:theme="@style/Theme.PedidosMontero"></activity>
         <activity android:name=".MainActivity" />
-
     </application>
 
 </manifest>
